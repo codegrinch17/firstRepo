@@ -1,0 +1,49 @@
+h1 {
+    color: rgb(38, 9, 53);
+    text-align: center;
+}
+
+h2 {
+    color: rgb(38, 9, 53);
+    animation: type 3s steps(33);
+    overflow: hidden;
+    white-space: nowrap;
+}
+@keyframes type {
+    0% {
+       width: 0ch; 
+    }
+    100% {
+        width: 33ch;
+    }
+}
+
+body {
+    background-color: lightslategray;
+}
+
+.topnav {
+    background-color:rgb(122, 102, 133);
+    overflow: hidden;
+  }
+  
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .topnav a:hover {
+    background-color: lightslategray;
+    color: black;
+  }
+  
+
+  .topnav a.active {
+    background-color:rgb(38, 9, 53);
+    color: white;
+  }
