@@ -1,14 +1,69 @@
-h1 {
-    color: rgb(38, 9, 53);
-    text-align: center;
+body {
+  background-color: #837f7f;
+}
+#topnav {
+  background-color:rgb(122, 102, 133);
+  left: 0px;
+  position: fixed;
+  height: 40px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+ 
+
+}
+
+#topnav ul{
+  margin: 0;
+  padding: 0;
+ text-align: center;
+ list-style: none;
+}
+
+#topnav ul li {
+  margin: 0;
+  padding: 0;
+display: inline-block;
+}
+#topnav ul li a {
+  
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  
+}
+
+#topnav ul li a:hover {
+  background-color: #837f7f;
+  color: black;
+  text-decoration: underline;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 30%;
+  width: 30%;
+  
+}
+h3 {
+  color: rgb(4, 65, 7);
+  text-align: center;
 }
 
 h2 {
-    color: rgb(38, 9, 53);
+    color: black;
     animation: type 3s steps(33);
     overflow: hidden;
     white-space: nowrap;
-}
+    text-align: center;
+ }
+
 @keyframes type {
     0% {
        width: 0ch; 
@@ -16,101 +71,5 @@ h2 {
     100% {
         width: 33ch;
     }
-}
 
-body {
-    background-color: lightslategray;
-}
-
-.topnav {
-    background-color:rgb(122, 102, 133);
-    overflow: hidden;
-  }
-  
-  
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-
-  .topnav a:hover {
-    background-color: lightslategray;
-    color: black;
-  }
-  
-
-  .topnav a.active {
-    background-color:rgb(38, 9, 53);
-    color: white;
-  }
-
-  form {
-      text-align: center;
-      border: 5px solid rgb(38, 9, 53);
-      
-  }
-
-  @import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700');
-
-  body{
-    font-family: 'Nunito', sans-serif;
-  }
-  
-  .a{color: #E7484F}
-  .b{color: #F68B1D}
-  .c{color: #FCED00}
-  .d{color: #009E4F}
-  .e{color: #00AAC3}
-  .f{color:  #732982}
-  
-  
-  .container{
-    margin-top: 150px;
-  }
-  
-  .text-center {
-    text-align: center;
-  }
-  
-  .rainbow{
-    background-color: #343A40;
-    border-radius: 4px;  
-    color: #fff;
-    cursor: pointer;
-    padding: 8px 16px;
     
-  }
-  
-  .rainbow-3:hover{
-    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, red);
-    animation: slidebg 2s linear infinite;
-  }
-  );
-  animation:slidebg 2s linear infinite;
-}
-
-
-@keyframes slidebg {
-  to {
-    background-position:6vw;
-  }
-}
-
-.follow{
-  margin-top: 40px;
-}
-
-.follow a{
-  color: black;
-  padding: 8px 16px;
-  text-decoration: none;
-}
-
-div {
-    position: relative;
-    
-}
