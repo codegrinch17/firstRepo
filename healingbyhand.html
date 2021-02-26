@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../ES6Project/healingbyhand.css">
-    <script src="app.js"></script>
+    <link rel="stylesheet" href="healingbyhand.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>HealingByHand</title>
     
 </head>
@@ -16,46 +16,68 @@
 
 <body>
 
-    <div id="topnav">
-        <ul>
 
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#Services">Services</a></li>
-            <li><a href="#Questions">Questions/Comments</a></li>
-            <li><a href="#Gallery">Gallery</a></li>
-            <li><a href="#Testimonials">Testimonials</a></li>
-            <li><a href="#Contact">Contact</a></li>
-        </ul>
-    </div>
-    <img src="HBH3.jpg" alt="original logo">
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">HealingByHand</a>
+ <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about_me">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#testimonials">Testimonials</a>
+        </li>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#contact">Contact</a>
+    </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#services" id="navbarDropdown" role="button" data-toggle="dropdown">Services</a>
+             
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#swedish">Swedish</a>
+                <a class="dropdown-item" href="#deep_tissue">Deep Tissue</a>
+                <a class="dropdown-item" href="#trigger_points">Trigger Point Therapy</a>
+                <a class="dropdown-item" href="#medical_massage">Medical Massage</a>
+                <a class="dropdown-item" href="#add_ons">Add Ons</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+    
 
     <hr>
 
 
-
-    <h2>Massage Therapy by Consuelo Maldonado</h2>
-    <h2>Licensed Massage Therapist MA59244</h2>
-
-
-
-
-
-    <h3>Serving SW FL for over 10 years!</h3>
-    <h3>"To Keep the body in good health is a duty...<br>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+    
+    <h2>Massage Therapy by <br> Consuelo Maldonado</h2>
+    <h2>Licensed & Insured <br>MA59244</h2></div>
+    <div class="row">
+        <div class="col">
+<blockquote class="blockquote">"To Keep the body in good health is a duty...<br>
         Otherwise we would not be able to keep our<br>
         mind strong and clear."<br>
-        <br>
-        <br>
-        --Buddha
-    </h3>
+        <footer class="blockquote-footer">Buddha</footer>
+    </blockquote></div></div>
 
+     <hr>
 
-
-
-
-    <hr>
-
-    <section id="About_me">
+    <section id="about_me">
         <h1>About Me</h1>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor labore neque, assumenda fugit fugiat
             dolorum
@@ -98,7 +120,7 @@
         </p>
         <hr>
     </section>
-    <section id="Services">
+    <section id="services">
         <h1>Services</h1>
         <h4>Swedish Massage</h4>
         <p>lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque ab ex veritatis libero, consectetur
@@ -213,7 +235,7 @@
     </section>
     <hr>
 
-    <section id="Questions">
+    <section id="questions">
         <h1>Questions and Comments</h1>
         <div>
             <form action="/feedback">
@@ -236,7 +258,7 @@
                     <textarea id="comments" rows="10" cols="40" name="comments"
                         placeholder="Your feed back is important, Thank You."></textarea>
                     <br>
-                    <a class="rainbow rainbow-3">Submit</a>
+                    <button type="button" class="btn btn-outline-dark">Submit</button>
         </div>
         </p>
 
@@ -246,7 +268,7 @@
     </section>
     <hr>
 
-    <section id="Gallery">
+    <section id="gallery">
         <h1>Gallery</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto porro quidem, eum fugit placeat
             aliquam
@@ -256,10 +278,10 @@
     </section>
 
     <hr>
-    <section id="Contact">
+    <section id="contact">
 
 
-        <section id="Testimonials">
+        <section id="testimonials">
             <h1>Testimonials</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde optio nemo vel inventore explicabo
                 iste
@@ -282,11 +304,14 @@
             </div>
         </section>
 
-
+        <script src="app.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
 <footer>
-    &copy; Consuelo Maldonado 2021
+   2021 &copy; Consuelo Maldonado 
 </footer>
 
 </html>

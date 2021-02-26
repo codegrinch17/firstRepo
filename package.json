@@ -1,8 +1,8 @@
 {
-  "name": "firstproject",
+  "name": "firstrepo",
   "version": "1.0.0",
-  "description": "development",
-  "main": "index.js",
+  "description": "hb",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/codegrinch17/firstRepo.git"
   },
-  "author": "",
+  "author": "codegrinch17",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/codegrinch17/firstRepo/issues"
